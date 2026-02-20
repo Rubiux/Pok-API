@@ -17,7 +17,6 @@
 
     <h1 class="mb-4 text-center">POKÉDEX</h1>
 
-    <!-- 🔥 AGREGAR POKEMON -->
     <div class="card p-3 mb-4 shadow-sm">
         <h5 class="mb-3">Agregar Pokémon</h5>
 
@@ -48,8 +47,6 @@
         </button>
     </div>
 
-
-    <!-- FILTROS -->
     <div class="row mb-4">
         <div class="col-md-6 mb-2">
             <input class="form-control"
@@ -65,18 +62,12 @@
         </div>
     </div>
 
-
-    <!-- LOADING -->
     <div v-if="loading" class="text-center my-5">
         <div class="spinner-border text-primary"></div>
         <p>Cargando Pokémon...</p>
     </div>
 
-
-    <!-- CONTENIDO -->
     <div v-if="!loading">
-
-        <!-- PROGRESO -->
         <div class="progress mb-3">
             <div class="progress-bar"
                  role="progressbar"
@@ -93,7 +84,6 @@
             No se encontraron Pokémon
         </p>
 
-        <!-- GRID -->
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3 mb-4"
                  v-for="poke in paginatedPokemon"
@@ -126,8 +116,6 @@
             </div>
         </div>
 
-
-        <!-- PAGINACION -->
         <nav class="d-flex justify-content-center">
             <ul class="pagination">
 
@@ -160,8 +148,6 @@
 
     </div>
 
-
-    <!-- MODAL -->
     <div class="modal fade" id="detailModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -211,3 +197,4 @@
 
 </body>
 </html>
+
